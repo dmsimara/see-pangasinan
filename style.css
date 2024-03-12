@@ -1,0 +1,18 @@
+@import url('');
+
+:root { /* global styling */
+    --color:  ; /* main color */
+    --color:  ; /* bg color */
+    --color:  ; /* secondary color */
+    --color:  ; /* tertiary color: accent color */
+    --box-shadow:  ; /* box shadow */
+}
+
+*, /* resets default browser styling */
+*::after,
+*::before { 
+    padding:  ;
+    margin:  ;
+    box-sizing:  ;
+    font-family:  ; 
+}
