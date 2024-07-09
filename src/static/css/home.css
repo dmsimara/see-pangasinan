@@ -1,18 +1,20 @@
-@import url('');
+/*Imported font families */
+@import url(#);
 
-:root { /* global styling */
-    --color:  ; /* main color */
-    --color:  ; /* bg color */
-    --color:  ; /* secondary color */
-    --color:  ; /* tertiary color: accent color */
-    --box-shadow:  ; /* box shadow */
+/* Global styling variables */
+:root { 
+  --white: #FFFFFF;
+  --color: #000000;    
+  --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
 }
 
-*, /* resets default browser styling */
-*::after,
-*::before { 
-    padding:  ;
-    margin:  ;
-    box-sizing:  ;
-    font-family:  ; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: #, sans-serif;
+    background-color: var(--white);
 }
