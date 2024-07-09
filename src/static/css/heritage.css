@@ -1,0 +1,133 @@
+/* Draft styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #00695c;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.accordion .accordion-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .accordion-item h3 {
+    margin: 0;
+    padding: 15px;
+    background: #f7f7f7;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion .accordion-item p {
+    padding: 15px;
+    margin: 0;
+    display: none;
+}
+
+.accordion .accordion-item.active p {
+    display: block;
+}
+
+.local-legends {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.local-legends h2 {
+    font-size: 36px;
+    color: #333;
+    font-style: italic;
+}
+
+.local-legends h3 {
+    font-size: 28px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.local-legends p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 20%;
+    text-align: left;
+}
+
+.local-legends img {
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.footer {
+    background: #e0f7fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .contacts {
+    margin-top: 10px;
+}
+
+.footer .contacts a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
