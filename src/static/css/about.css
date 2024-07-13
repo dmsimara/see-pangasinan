@@ -24,8 +24,10 @@ body, html {
   box-sizing: border-box;
   color: #333333;
   background-color: #f8f9fa;
+  text-align: justify;
 }
 
+/* Header styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -64,6 +66,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Main content styling */
 .content {
     padding: 20px;
     display: flex;
@@ -81,9 +84,10 @@ nav ul li a:hover {
     margin: 20px;
 }
 
-.content .text-section h2 {
+.content .text-section h1 {
     font-size: 36px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .content .text-section p {
@@ -91,15 +95,36 @@ nav ul li a:hover {
     color: #555;
 }
 
-.image-section img {
-    width: 100%;
-    border-radius: 10px;
+.text-section p {
+  margin-bottom: 30px;
+}
+.text-section img {
+  width: 100%; 
+  max-width: 800px;  
+  height: 450px;  
+  border-radius: 10px;  
+  margin: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 
+.image-section img {
+  width: 100%;  
+  max-width: 800px;  
+  height: 300px;  
+  border-radius: 10px;  
+  margin: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* Footer styling */
 footer {
     background-color: var(--aqua-transparent);
-    padding: 20px 50px;
+    padding: 40px 80px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
   }
   
   .footer-content {
@@ -116,6 +141,12 @@ footer {
     margin: 5px 0;
     font-size: 18px;
     color: #333333;
+    margin-top: 5px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 18px;
   }
   
   .footer-contacts a {
@@ -124,14 +155,21 @@ footer {
     color: #333333;
     font-size: 20px;
     transition: transform 0.3s ease; 
+    padding: 5px;
+    align-items: left;
   }
   
   .footer-contacts a:hover {
     transform: scale(1.05); 
   }
   
+  .footer-contacts p {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
   .footer-bottom {
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
     font-size: 14px;
   }
@@ -140,4 +178,10 @@ footer {
     margin: 0;
     color: #333333;
   }
-  
+
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #555;
+    margin: 20px 0;
+}
