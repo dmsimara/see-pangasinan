@@ -1,4 +1,4 @@
-/*Imported font families */
+/* Imported font families */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Global styling variables */
@@ -65,6 +65,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Main content styling */
 .content {
     padding: 20px;
 }
@@ -72,7 +73,9 @@ nav ul li a:hover {
 .content h2 {
     text-align: center;
     font-size: 48px;
-    color: #00695c;
+    color: var(--aqua);
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .accordion {
@@ -83,7 +86,7 @@ nav ul li a:hover {
 }
 
 .accordion .accordion-item {
-    background: #fff;
+    background: var(--white);
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 30%;
@@ -109,36 +112,52 @@ nav ul li a:hover {
 
 .accordion .accordion-item.active p {
     display: block;
+    text-align: justify;
 }
 
+/* Local legends styling */
 .local-legends {
-    text-align: center;
-    margin: 40px 0;
+  margin-bottom: 20px;  
 }
 
-.local-legends h2 {
-    font-size: 36px;
-    color: #333;
-    font-style: italic;
+.legend-content {
+  display: flex;  
+  align-items: flex-start;  
+  gap: 20px;  
 }
 
-.local-legends h3 {
-    font-size: 28px;
-    color: #333;
-    margin: 20px 0;
+.legend-content img {
+  width: 300px;  
+  height: 300px;  
+  border-radius: 10px;  
+  margin-left: 10px;
 }
 
-.local-legends p {
-    font-size: 16px;
-    color: #555;
-    margin: 0 20%;
-    text-align: left;
+.legend-text {
+  flex: 1;  
 }
 
-.local-legends img {
-    width: 80%;
-    border-radius: 10px;
-    margin: 20px 0;
+.legend-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.legend-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.legend-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Set height of the horizontal line */
+  background-color: #555; /* Set background color */
+  margin: 20px 0; /* Add margin for spacing */
 }
 
 /* Footer styling */
