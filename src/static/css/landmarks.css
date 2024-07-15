@@ -76,7 +76,7 @@ nav ul li a:hover {
 h1 {
   text-align: center;
   margin: 20px 0;
-  color: var(--aqua);
+  color: #333;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   font-size: 40px;
 }
@@ -192,7 +192,7 @@ h1 {
 }
 
 .details-button:hover {
-  background-color: var(--black);
+  background-color: #333;
 }
 
 @media screen and (max-width: 900px) {
