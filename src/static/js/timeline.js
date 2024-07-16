@@ -1,13 +1,27 @@
-const timeline_wrapper = document.querySelector('.timeline-wrapper'),
-    timelines = document.querySelectorAll('.timeline li .data');
+document.addEventListener("DOMContentLoaded", function() {
+    const timelineItems = document.querySelectorAll(".timeline li");
 
-for (const time of timelines) {
-    time.onclick = ()=> time.classList.toggle('show');
-}
+    timelineItems.forEach(item => {
+      item.addEventListener("click", function() {
+        const dataElement = this.querySelector(".data");
 
-timeline_wrapper.addEventListener('mousemove', (event)=>  {
-    const timeline = document.querySelector('.timeline');
-    let scroll_width = event.pageX / timeline_wrapper.clientWidth * (timeline_wrapper.clientWidth - timeline.clientWidth);
+        if (dataElement.classList.contains("show")) {
+          dataElement.classList.remove("show");
+        } else {
+           
+          document.querySelectorAll(".data.show").forEach(openItem => {
+            openItem.classList.remove("show");
+          });
 
-    timeline.style.left = scroll_width.toFixed(1) + 'px';
-})
+          dataElement.classList.add("show");
+        }
+      });
+
+      const closeButton = item.querySelector(".data .close");
+      closeButton.addEventListener("click", function(event) {
+        event.stopPropagation(); 
+        const dataElement = this.closest(".data");
+        dataElement.classList.remove("show");
+      });
+    });
+  });
