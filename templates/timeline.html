@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>See Pangasinan</h1> 
+        <span class="logo">See Pangasinan</span>
         <nav>
             <ul>
                 <li><a href="../templates/home.html">Home</a></li>
@@ -26,45 +26,66 @@
             </ul>
         </nav>
     </header>
+    <div class="timeline-wrapper">
+        <ul class="timeline">
+            <li data-date="8th Century A.D">
+                <span class="title">Pre-Colonial Period</span>
+                <div class="data">
+                    <h3>Pre-Colonial Period</h3>
+                    <small>8th Century A.D</small>
+                    <img src="../src/assets/timeline/pre-colonial.jpg" alt="Pre-Colonial Period">
+                    <a href="../templates/precolonial.html">Read More</a>
+                    <span class="close">Click To Close</span>
+                </div>
+            </li>
+            <li data-date="1571">
+                <span class="title">Spanish Colonial Period</span>
+                <div class="data">
+                    <h3>Spanish Colonial Period</h3>
+                    <small>1571 - 1855</small>
+                    <img src="../src/assets/timeline/1571.jpg" alt="Spanish Colonial Period">
+                    <p><a href="../templates/spanish.html">Read More</a></p>
+                    <span class="close">Click To Close</span>
+                </div>
+            </li>
+            <li data-date="1897">
+                <span class="title">Philippine Revolution</span>
+                <div class="data">
+                    <h3>Philippine Revolution</h3>
+                    <small>1897 - 1901</small>
+                    <img src="../src/assets/timeline/1897.jpg" alt="Philippine Revolution">
+                    <p><a href="../templates/ph.html">Read More</a></p>
+                    <span class="close">Click To Close</span>
+                </div>
+            </li>
+            <li data-date="1941">
+                <span class="title">Japanese Occupation</span>
+                <div class="data">
+                    <h3>Japanese Occupation</h3>
+                    <small>1941 - 1945</small>
+                    <img src="../src/assets/timeline/1941.jpg" alt="Japanese Occupation">
+                    <p><a href="../templates/jap.html">Read More</a></p>
+                    <span class="close">Click To Close</span>
+                </div>
+            </li>
+            <li data-date="1953">
+                <span class="title">Post-War Period</span>
+                <div class="data">
+                    <h3>Post-War Period</h3>
+                    <small>1953 - 1999</small>
+                    <img src="../src/assets/timeline/1953.jpg" alt="Post-War Period">
+                    <p><a href="../templates/postwar.html">Read More</a></p>
+                    <span class="close">Click To Close</span>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-    <main>
-        <section class="timeline">
-            <div class="timeline-item">
-                <h2>Pre-Colonial Period</h2>
-                <a href="../templates/pre-colonial.html"><img src="../src/assets/timeline/pre-colonial.jpg" alt="Pre-Colonial Image"></a>
-                <p><a href="../templates/precolonial.html">Read more</a></p>
-            </div>
-
-            <div class="timeline-item">
-                <h2>Spanish Colonial Period</h2>
-                <a href="../templates/spanish.html"><img src="../src/assets/timeline/1572_Salcedo.jpg" alt="Spanish Colonial Image"></a>
-                <p><a href="../templates/spanish.html">Read more</a></p>
-            </div>
-
-            <div class="timeline-item">
-                <h2>Philippine Revolution</h2>
-                <a href="../templates/ph.html"><img src="../src/assets/timeline/1998.jpg" alt="Philippine Revolution Image"></a>
-                <p><a href="../templates/ph.html">Read more</a></p>
-            </div>
-
-            <div class="timeline-item">
-                <h2>Japanese Occupation</h2>
-                <a href="../templates/jap.html"><img src="../src/assets/timeline/1941.jpg" alt="Japanese Occupation Image"></a>
-                <p><a href="../templates/jap.html">Read more</a></p>
-            </div>
-
-            <div class="timeline-item">
-                <h2>Post-War Period</h2>
-                <a href="../templates/postwar.html"><img src="../src/assets/timeline/1992.jpg" alt="Post-War Period Image"></a>
-                <p><a href="../templates/postwar.html">Read more</a></p>
-            </div>
-        </section>
-    </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <p>See Pangasinan</p>
+                <span>See Pangasinan</span>
                 <p>Where Sun-Kissed Shores Meet Timeless Culture!</p>
             </div>
             <div class="footer-contacts">
@@ -74,9 +95,12 @@
                 <a href="#"><i class="fas fa-phone-alt"></i></a>
             </div>
         </div>
+        <hr>
         <div class="footer-bottom">
             <p>@ See Pangasinan 2024, All rights reserved</p>
         </div>
     </footer>
+
+    <script src="../src/static/js/timeline.js"></script>
 </body>
 </html>
