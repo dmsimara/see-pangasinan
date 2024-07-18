@@ -75,7 +75,7 @@ main {
 h1 {
     text-align: center;
     margin: 20px 0;
-    color: var(--aqua);
+    color: #333;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     font-size: 40px;
 }
@@ -112,6 +112,7 @@ h1 {
     font-weight: bold;
     color: var(--gray);
     margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 .description {
